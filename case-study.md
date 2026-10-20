@@ -9,6 +9,24 @@ Steam OpenID provides external identity; Django manages player/store state; Stri
 ## C — Contribution & delivery
 Implemented authentication flows, player profiles, item/slot management, virtual coin packages, transaction records, checkout creation, webhook handling and administrative views.
 
+## Engineering highlights
+
+- Integrated external gaming identity with application-specific player profiles.
+- Kept privileged payment operations behind the server-side application boundary.
+- Modelled player/store state through explicit persistent domain entities.
+- Separated user-facing store workflows from administrative management surfaces.
+- Hardened runtime secret handling during repository modernization.
+
+## Technology stack
+
+- Python
+- Django
+- Django ORM
+- Steam OpenID
+- Stripe integration
+- Server-rendered Django templates
+- GitHub Actions CI
+
 ## E — Evidence & outcomes
 Private source verifies the implemented workflows. Public proof does not assert commercial metrics, PCI certification or production-scale volume.
 
